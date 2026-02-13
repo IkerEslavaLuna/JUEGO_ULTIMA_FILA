@@ -6,6 +6,15 @@ class Jugador:
     def __init__(self, nombre,vida,ataque_especial, ataque, defensa_fisica, defensa_especial, velocidad, tipo, habilidades,naturaleza, nivel):
         self.nombre = nombre
         self.vida = vida
+        self.ataque_especial = ataque_especial
+        self.ataque = ataque
+        self.defensa_fisica = defensa_fisica
+        self.defensa_especial = defensa_especial
+        self.velocidad = velocidad
+        self.tipo = tipo
+        self.habilidades = habilidades
+        self.naturaleza = naturaleza
+        self.nivel = nivel
 
     def recibir_danio(self, cantidad):
         danio_real = max(0, cantidad - self.defensa)
