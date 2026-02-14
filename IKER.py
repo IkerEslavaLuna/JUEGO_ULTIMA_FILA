@@ -16,10 +16,10 @@ class Jugador:
         self.naturaleza = naturaleza
         self.nivel = nivel
 
-    def recibir_danio(self, cantidad):
-        danio_real = max(0, cantidad - self.defensa)
+    def recibir_danio(self):
+        danio_real = self.ataque - self.defensa_fisica
         self.vida -= danio_real
-        return danio_real
+        return print(f"Daño recibido: {danio_real}")ts
 
 
 class Guerrero(Jugador):
